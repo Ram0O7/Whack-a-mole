@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100%;
+    background-image: radial-gradient(#92abcc,#002212);
+    padding: 40px 0;
+    font-family: sans-serif;
+}
+
+main{
+    height: 100%;
+}
+
+.grid{
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-inline: auto;
+    border: 3px solid rgb(0, 128, 0);
+}
+
+.squire{
+    height: 100%;
+    width: 100%;
+    border:1px solid rgb(94, 0, 0);
+}
+
+.mole{
+    background-image:url('mole.jpg');
+    background-size: cover;
+}
+
+.score-card,.timer{
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:480px) {
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    .grid{
+        width: 360px;
+        height: 360px;
+    }
+}
